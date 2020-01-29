@@ -8,8 +8,9 @@ import java.util.Map;
 
 @Component
 public class AccountStore {
+    private static final HashMap<String, Account> ACCOUNTS = new HashMap<>();
 
     public Map<String, Account> getAccountData() {
-        return new HashMap<>();
+        return ACCOUNTS;
     }
 }
